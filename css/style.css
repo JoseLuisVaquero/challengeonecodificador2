@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+    background-color: hwb(27 73% 14%);
+}
+
+h1 {
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+footer {
+    padding-top: 20%;
+    text-align: center;
+}
+
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    height: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.text-box2 {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+}
+
+#input-text,
+#encrypted-text {
+    width: 80%;
+    border-radius: 25px;
+}
+
+#boton-encriptar,
+#boton-desencriptar,
+#boton-copiar {
+    position:flex;
+    margin: 0px 0px 10px;
+    width: 250px;
+    height: 45px;
+    background: #e4a30b;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 2em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 2em;
+    }
+}
+
